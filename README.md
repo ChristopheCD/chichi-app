@@ -1,5 +1,21 @@
 # Getting Started with Create React App
 
+##TODO
+
+- [ ] Liste
+- [ ] Styled compoentnets
+- [ ] Partage de donnée
+- [ ] Design System
+- [ ] Filtre/Search
+- [ ] Navigation
+
+Optional
+
+- [ ] Storybook
+- [ ] graph
+- [ ] Modal
+- [ ] Translaction
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
@@ -28,10 +44,6 @@ The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
 If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
