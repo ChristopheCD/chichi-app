@@ -1,5 +1,9 @@
+import { ThemeProvider } from "@material-ui/core/styles";
+
 import "./styles.css";
 import SushiList from "../SushiList";
+import Header from "../Header";
+import theme from "./theme";
 
 const sushis = [
   {
@@ -26,9 +30,9 @@ const sushis = [
 
 export default function App() {
   return (
-    <div>
-      <p>Hello !</p>
+    <ThemeProvider theme={theme}>
+      <Header shoppingCartItemsCount={42} />
       <SushiList sushis={sushis} />
-    </div>
+    </ThemeProvider>
   );
 }

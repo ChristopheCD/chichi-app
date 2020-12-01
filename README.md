@@ -2,8 +2,8 @@
 
 ##TODO
 
-- [ ] Liste
-- [ ] Styled components
+- [x] Liste
+- [x] Styled components
 - [ ] Design System
 - [ ] Filtre/Search
 - [ ] Navigation
