@@ -25,6 +25,12 @@
     "web-vitals": "^0.2.4"
   },
   "devDependencies": {
+    "@storybook/addon-actions": "^6.1.9",
+    "@storybook/addon-essentials": "^6.1.9",
+    "@storybook/addon-links": "^6.1.9",
+    "@storybook/node-logger": "^6.1.9",
+    "@storybook/preset-create-react-app": "^3.1.5",
+    "@storybook/react": "^6.1.9",
     "commitizen": "^4.2.2",
     "git-cz": "^4.7.5",
     "husky": "^4.3.0",
@@ -56,7 +62,9 @@
     "build": "react-scripts build",
     "commit": "git cz",
     "start": "react-scripts start",
-    "test": "react-scripts test"
+    "test": "react-scripts test",
+    "storybook": "start-storybook -p 6006 -s public",
+    "build-storybook": "build-storybook -s public"
   },
   "version": "0.1.0"
 }
