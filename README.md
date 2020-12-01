@@ -3,7 +3,7 @@
 ##TODO
 
 - [ ] Liste
-- [ ] Styled compoentnets
+- [ ] Styled components
 - [ ] Design System
 - [ ] Filtre/Search
 - [ ] Navigation
