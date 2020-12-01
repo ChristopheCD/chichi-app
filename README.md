@@ -4,7 +4,7 @@
 
 - [x] Liste
 - [x] Styled components
-- [ ] Design System
+- [x] Design System
 - [ ] Filtre/Search
 - [ ] Navigation
 - [ ] Partage de donnée
