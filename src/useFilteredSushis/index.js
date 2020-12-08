@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export default function useFilteredSushis(sushis) {
+export default function useFilteredSushis(sushis = []) {
   const [search, setSearch] = useState("");
   const filterSushis = (event) => setSearch(event.currentTarget.value);
 

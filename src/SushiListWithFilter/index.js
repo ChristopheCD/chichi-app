@@ -5,11 +5,19 @@ import useStyles from "./useStyles";
 import ShushiList from "../SushiList";
 import { types as sushiCardTypes } from "../SushiCard";
 import useFilteredSushis from "../useFilteredSushis";
+import useSuhis from "../useSushis";
 
 export default function SushiListWithFilter({ sushis }) {
   const classes = useStyles();
 
-  const [search, filteredSushis, { filterSushis }] = useFilteredSushis(sushis);
+  const { isLoading, data: remoteSushis } = useSuhis();
+
+  const [search, filteredSushis, { filterSushis }] = useFilteredSushis(
+    remoteSushis
+  );
+
+  if (isLoading) return "Patientez ...";
+
   return (
     <form autoComplete="off" noValidate className={classes.form}>
       <TextField

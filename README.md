@@ -5,13 +5,13 @@
 - [x] Liste
 - [x] Styled components
 - [x] Design System
-- [ ] Filtre/Search
+- [x] Filtre/Search
 - [ ] Navigation
 - [ ] Partage de donnée
 
 Optional
 
-- [ ] Storybook
+- [x] Storybook
 - [ ] graph
 - [ ] Modal
 - [ ] Translaction
@@ -54,6 +54,14 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 ## `yarn commit`
 
 git commit through git-cz
+
+## `yarn storybook`
+
+Storybook to enhance DX.
+
+## `yarn API`
+
+API through [json-server](https://github.com/typicode/json-server)
 
 ## Learn More
 
