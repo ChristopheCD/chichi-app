@@ -1,15 +1,25 @@
 import { ThemeProvider } from "@material-ui/core/styles";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 import "./styles.css";
-import SushiListWithFilter from "../SushiListWithFilter";
-import Header from "../Header";
+import SushiListScreen from "../SushiListScreen";
 import theme from "./theme";
+import SettingsScreen from "../SettingsScreen";
+import routes from "./routes";
 
 export default function App() {
   return (
     <ThemeProvider theme={theme}>
-      <Header shoppingCartItemsCount={42} />
-      <SushiListWithFilter />
+      {/* <Header shoppingCartItemsCount={42} /> */}
+      <BrowserRouter>
+        <Switch>
+          {routes.map(({ path, component }) => (
+            <Route path={path} exact>
+              {component}
+            </Route>
+          ))}
+        </Switch>
+      </BrowserRouter>
     </ThemeProvider>
   );
 }
