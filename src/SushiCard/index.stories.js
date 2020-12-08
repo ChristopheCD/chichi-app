@@ -7,7 +7,7 @@ const csf = {
 export default csf;
 
 export const Default = () => (
-  <SushiCard title="Sushi" description="Ingrédient riz poisson" />
+  <SushiCard id={1} title="Sushi" description="Ingrédient riz poisson" />
 );
 
 export const WithImage = () => (
@@ -15,5 +15,6 @@ export const WithImage = () => (
     title="Sushi"
     description="Ingrédient riz poisson"
     image="https://picsum.photos/seed/sushi1/400/300"
+    id={1}
   />
 );
