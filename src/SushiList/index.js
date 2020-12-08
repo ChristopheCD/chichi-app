@@ -1,28 +1,22 @@
-import { arrayOf, number, shape, string } from "prop-types";
-
-import { VerticalList, ListItem } from "./styles";
+import { arrayOf, shape } from "prop-types";
+import { Typography } from "@material-ui/core";
+import SushiCard, { types as sushiCardTypes } from "../SushiCard";
 
 export default function SushiList({ sushis }) {
+  if (sushis.length === 0)
+    return <Typography>aucun élément à afficher</Typography>;
+
   return (
-    <VerticalList>
-      {sushis.map(({ id, title }) => (
-        <ListItem key={id} id={id}>
-          {title}
-        </ListItem>
+    <>
+      {sushis.map((sushi) => (
+        <SushiCard key={sushi.id} {...sushi} />
       ))}
-    </VerticalList>
+    </>
   );
 }
 
 SushiList.propTypes = {
-  sushis: arrayOf(
-    shape({
-      id: number.isRequired,
-      title: string.isRequired,
-      description: string,
-      image: string,
-    })
-  ),
+  sushis: arrayOf(shape(sushiCardTypes)),
 };
 
 SushiList.defaultProps = {
