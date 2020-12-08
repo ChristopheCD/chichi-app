@@ -12,7 +12,13 @@ import { number, string } from "prop-types";
 import useStyles from "./useStyles";
 import PlaceholderCardMedia from "../PlaceholderCardMedia";
 
-export default function SushiCard({ id, title, description, image }) {
+export default function SushiCard({
+  id,
+  title,
+  description,
+  image,
+  isLoading,
+}) {
   const classes = useStyles();
 
   return (
