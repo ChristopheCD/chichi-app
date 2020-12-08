@@ -1,27 +1,10 @@
 import SushiList from "./";
 
-const sushis = [
-  {
-    id: 1,
-    title: "Maki",
-    description: "poisson, riz",
-  },
-  {
-    id: 2,
-    title: "Temaki",
-    description: "poisson, riz",
-  },
-  {
-    id: 3,
-    title: "Urumaki",
-    description: "poisson, riz",
-  },
-  {
-    id: 4,
-    title: "Sashimi",
-    description: "poisson, riz",
-  },
-];
+const sushis = new Array(8).fill(null).map((_sushi, id) => ({
+  id,
+  title: `Maki ${id}`,
+  description: "poisson, riz",
+}));
 
 const csf = {
   title: "SushiList",
