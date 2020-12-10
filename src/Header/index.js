@@ -1,9 +1,10 @@
 import { connect } from "react-redux";
 
 import Header from "./components";
+import { totalByCount } from "../selectors";
 
 const mapStateToProps = (state) => ({
-  shoppingCartItemsCount: state.shoppingCart.length,
+  shoppingCartItemsCount: totalByCount(state.shoppingCart, "count"),
 });
 
 export default connect(mapStateToProps)(Header);

@@ -52,9 +52,7 @@ export default function SushiCard({
       </CardContent>
       <CardActions disableSpacing>
         <Counter onDec={onDec} onInc={onInc} value={counter} />
-        <AddShoppingCartButton
-          onClick={() => addToShoppingCart({ id, counter })}
-        />
+        <AddShoppingCartButton onClick={() => addToShoppingCart(id, counter)} />
       </CardActions>
     </Card>
   );
