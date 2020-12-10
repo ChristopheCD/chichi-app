@@ -10,7 +10,7 @@ export default function SushiScreen() {
 
   return (
     <Screen>
-      <Typography>Sushi {sushi?.title}</Typography>
+      <Typography variant="h1">Sushi {sushi?.title}</Typography>
     </Screen>
   );
 }

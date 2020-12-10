@@ -11,6 +11,9 @@ import { number, string } from "prop-types";
 
 import useStyles from "./useStyles";
 import PlaceholderCardMedia from "../PlaceholderCardMedia";
+import Counter from "../Counter";
+import AddShoppingCartButton from "../AddShoppingCartButton";
+import { useCounter } from "react-use";
 
 export default function SushiCard({
   id,
@@ -20,6 +23,10 @@ export default function SushiCard({
   isLoading,
 }) {
   const classes = useStyles();
+
+  const [counter, { dec, inc }] = useCounter(1, 10, 1);
+  const onDec = () => dec();
+  const onInc = () => inc();
 
   return (
     <Card className={classes.root}>
@@ -41,13 +48,9 @@ export default function SushiCard({
           {description}
         </Typography>
       </CardContent>
-      <CardActions>
-        <IconButton
-          className={classes.addToShoppingCart}
-          aria-label="add shoping cart"
-        >
-          <AddShoppingCart />
-        </IconButton>
+      <CardActions disableSpacing>
+        <Counter onDec={onDec} onInc={onInc} value={counter} />
+        <AddShoppingCartButton onClick={() => console.log({ id, counter })} />
       </CardActions>
     </Card>
   );
