@@ -16,7 +16,9 @@ export default function BasketScreen({ basket }) {
   );
 }
 
-BasketScreen.propTypes = basketTypes;
+BasketScreen.propTypes = {
+  basket: basketTypes,
+};
 
 BasketScreen.defaultProps = {
   basket: [],

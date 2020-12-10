@@ -14,7 +14,7 @@ export default function App() {
       <BrowserRouter>
         <Switch>
           {routes.map(({ path, component }) => (
-            <Route path={path} exact>
+            <Route key={path} path={path} exact>
               {component}
             </Route>
           ))}

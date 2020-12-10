@@ -63,5 +63,5 @@ export const types = {
 SushiCard.propTypes = types;
 
 SushiCard.defaultProps = {
-  image: null,
+  image: "",
 };
