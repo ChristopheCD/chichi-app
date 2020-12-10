@@ -1,4 +1,4 @@
-const sushiTypes = ["Maki", "Sashimi", "Chirachi", "Spring Roll"];
+export const sushiTypes = ["Maki", "Sashimi", "Chirachi", "Spring Roll"];
 
 const createSushi = (id) => ({
   id,
