@@ -1,5 +1,7 @@
-import theme from "../src/App/theme";
 import { ThemeProvider } from "@material-ui/core/styles";
+import StoryRouter from "storybook-react-router";
+
+import theme from "../src/App/theme";
 import "../src/App/styles.css";
 import { Fullscreen } from "@material-ui/icons";
 
@@ -14,4 +16,5 @@ export const decorators = [
       <Story />
     </ThemeProvider>
   ),
+  StoryRouter(),
 ];
