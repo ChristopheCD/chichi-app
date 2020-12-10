@@ -1,4 +1,4 @@
-import Header from "./";
+import Header from "./components";
 
 const csf = {
   title: "Header",

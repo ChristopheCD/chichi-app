@@ -3,7 +3,7 @@ import { arrayOf, shape } from "prop-types";
 
 import useStyles from "./useStyles";
 import ShushiList from "../SushiList";
-import { types as sushiCardTypes } from "../SushiCard";
+import { types as sushiCardTypes } from "../SushiCard/component";
 import useSuhis from "../useSushis";
 import Screen from "../Screen";
 

@@ -4,7 +4,7 @@ import { node } from "prop-types";
 export default function Screen({ children }) {
   return (
     <>
-      <Header shoppingCartItemsCount={42} />
+      <Header />
       {children}
     </>
   );

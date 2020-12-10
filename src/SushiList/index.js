@@ -1,6 +1,8 @@
 import { arrayOf, bool, shape } from "prop-types";
 import { Grid, Typography } from "@material-ui/core";
-import SushiCard, { types as sushiCardTypes } from "../SushiCard";
+
+import SushiCard from "../SushiCard";
+import { types as sushiCardTypes } from "../SushiCard/component";
 import useStyles from "./useStyles";
 
 export default function SushiList({ sushis }) {

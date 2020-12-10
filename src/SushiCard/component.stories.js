@@ -1,4 +1,4 @@
-import SushiCard from "./";
+import SushiCard from "./component";
 
 const csf = {
   title: "SushiCard",
